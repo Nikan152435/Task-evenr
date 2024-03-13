@@ -1,0 +1,32 @@
+version: 1.0.{build}
+
+image: Visual Studio 2019
+
+branches:
+  only:
+    - main
+
+environment:
+  matrix:
+    - nodejs_version: "12"
+
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm install -g yarn
+  - yarn install
+
+build_script:
+  - yarn build
+
+artifacts:
+  - path: dist
+    name: goblin-game
+
+deploy:
+  provider: GitHub
+  auth_token:
+    secure: YOUR_SECURE_TOKEN_ENCRYPTED_WITH_APPVEYOR_ENCRYPT
+  artifact: dist\*
+  draft: false
+  on:
+    branch: main
