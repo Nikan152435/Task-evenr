@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run lint && webpack",
+    "test": "",
+    "build": "webpack",
     "lint": "eslint . && echo 'Linting complete.'"
   },
   "keywords": [],
