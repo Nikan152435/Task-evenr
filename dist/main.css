@@ -14,7 +14,7 @@ body {
     border: 0.5px solid black;
   }
   .container:hover {
-    cursor: url(images/f8421e8ddc437d46185c.png) 30 40, auto;
+    cursor: url(f8421e8ddc437d46185c.png) 30 40, auto;
   }
   .block{
     height: 80px;
@@ -25,6 +25,6 @@ body {
     border: 0.2px solid black;
   }
   .goblin {
-    background-image: url(images/bbd61bc2845efc4a36c8.png);
+    background-image: url(bbd61bc2845efc4a36c8.png);
     background-size: cover;
   }  
