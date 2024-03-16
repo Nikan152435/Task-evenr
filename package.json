@@ -6,7 +6,7 @@
   "scripts": {
     "test": "",
     "build": "webpack",
-    "lint": "eslint . && echo 'Linting complete.'"
+    "lint": "eslint . --fix"
   },
   "keywords": [],
   "author": "",
